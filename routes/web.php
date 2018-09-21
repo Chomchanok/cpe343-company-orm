@@ -28,6 +28,7 @@ $router->get('/employees/{id}/projects', 'EmployeeController@projects');
 
 $router->get('/departments', 'DepartmentController@all');
 $router->get('/departments/{id}', 'DepartmentController@one');
+$router->get('/departments/{id}/manager', 'DepartmentController@manager');
 $router->get('/departments/{id}/employees', 'DepartmentController@employees');
 $router->get('/departments/{id}/projects', 'DepartmentController@projects');
 $router->get('/departments/{id}/locations', 'DepartmentController@locations');

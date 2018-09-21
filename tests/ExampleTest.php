@@ -97,6 +97,13 @@ class ExampleTest extends TestCase
         $this->assertEquals(count($projects), 3);
     }
 
+    public function testDepartmentHasAManager()
+    {
+        $this->get('/departments/1/manager')->seeJson([
+            'fname' => 'James'
+        ]);
+    }
+
     public function testProjectAll()
     {
         $response = $this->call('get', '/projects');

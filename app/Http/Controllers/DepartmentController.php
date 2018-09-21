@@ -16,6 +16,11 @@ class DepartmentController extends Controller
         return Department::find($id);
     }
 
+    public function manager($id)
+    {
+        return Department::find($id)->manager;
+    }
+
     public function employees($id)
     {
         return Department::find($id)->employees;

@@ -22,6 +22,11 @@ class Department extends Model
      */
     public $timestamps = false;
 
+    public function manager()
+    {
+        // TODO: add relation over here.
+    }
+
     public function employees()
     {
         // TODO: add relation over here.
