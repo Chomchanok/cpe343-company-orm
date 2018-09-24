@@ -44,7 +44,7 @@ class ExampleTest extends TestCase
     {
         $response = $this->call('get', '/employees/333445555/supervisees');
         $supervisees = json_decode($response->content());
-        $this->assertEquals(count($supervisees), 2);
+        $this->assertEquals(count($supervisees), 3);
     }
 
     public function testEmployeeManager()
